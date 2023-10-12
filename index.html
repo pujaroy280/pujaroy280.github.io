@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: lightyellow;
+      padding: 20px;
+      font-family: Arial;
+    }
+
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    img {
+      border-radius: 80%;
+      width: 25%;
+      height: 40%;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+    <h1>Puja Roy's Professional Portfolio</h1>
+    <img src="puja-roy-586x790.jpg" alt="Pic of me" height="460" width="350" class="center">
+    <h2>Location: New York, USA</h2>
+    <h2>Occupation Title: STEM Project Coordinator</h2>
+    <hr>
+
+    <h2>NASA INTERNSHIP PORTFOLIO</h2>
+    <p>Below are some of my notable projects that I worked on throughout my internships at NASA...</p>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="Top10Missionsfrom2019Pubs.png" alt="Mountains" style="width:100%">
+          <h3>Top 10 Missions from 2019 Publications</h3>
+          <p>I worked on the metadata project at NASA Goddard Space Flight Center. I programmed in Python to visualize
+            Top 10 Missions from 2019 Publications that included NASA Goddard Author affiliations.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="AIML@NASA.png" alt="Lights" style="width:100%">
+          <h3>AIML @ NASA Newsletter</h3>
+          <p>I automated the monthly AIML @ NASA newsletter initiative using Microsoft Power Automate, HTML and reduced
+            the manual workflow process.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Topics of Titles.PNG" alt="Nature" style="width:100%">
+          <h3>Topic Modeling of the AIML Inventory</h3>
+          <p>This is one of the most coolest machine learning projects that I have ever worked on at NASA Glenn Research
+            Center. I programmed in Python (Pandas, Gensim, pyLDAvis & nltk), utilized Jupyter Notebook & Natural
+            Language Processing (NLP) to perform topic modeling & developed a Latent Dirichlet Allocation (LDA) model
+            that identifies & clusters frequent abstract topics from the summary & titles of AIML projects/Use Cases of
+            data from the AIML Inventory.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="NASAPMTool.png" alt="Mountains" style="width:100%">
+          <h3>FY22 NASA Project Management Dashboard Tool</h3>
+          <p>Throughout my internship at NASA Langley Research Center, I developed and generated Project Management (PM)
+            dashboards in Excel for 8 FY22 Grand Challenges consisting of 35+ projects.</p>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+
+    <div class="content">
+      <img src="chart (17).png" alt="Bear" style="width:100%">
+      <h3>Top 25 Missions from 2001-2019 Publications</h3>
+      <p>I programmed in HTML, CSS, JavaScript (Chart.js, Canvas.js, Node.js) used PapaParse and html2canvas, parsed and
+        read excel and CSV files to develop 9 dynamic metadata visualizations to overlay on the user interface of NASA
+        Goddard Library’s Institutional Repository.</p>
+      <p>Here are Top 25 missions from 2001-2019 Publications that are classified as spacecraft, experiment/instrument
+        and program.</p>
+    </div>
+
+    <!-- END MAIN -->
+  </div>
+
+</body>
+
+</html>
